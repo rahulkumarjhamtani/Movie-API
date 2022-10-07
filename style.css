@@ -1,0 +1,22 @@
+.search
+{
+
+    width:100%;
+    text-align: center;
+}
+
+#showList
+{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img
+{
+    float:left;
+}
+
+h2
+{
+    margin-top: 0;
+}
