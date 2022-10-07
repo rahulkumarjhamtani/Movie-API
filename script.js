@@ -1,18 +1,18 @@
 var key = "3a0a21f9923f5784f52211f34862c067";
 var baseURL = "https://api.themoviedb.org/3/search/movie";
 
-function findMovie(event) {
-  event.preventDefault();
+// function findMovie(event) {
+//   event.preventDefault();
 
-  var movie = document.getElementById("movie").value;
-  console.log("Movie = ", movie);
+//   var movie = document.getElementById("movie").value;
+//   console.log("Movie = ", movie);
 
-  var url = `${baseURL}?api_key=${key}&query=${movie}`;
+//   var url = `${baseURL}?api_key=${key}&query=${movie}`;
 
-  console.log(url);
-}
+//   console.log(url);
+// }
 
-async function getUser() {
+async function findMovie() {
   // Making an API call (request)
   // and getting the response back
 
@@ -38,10 +38,10 @@ async function getUser() {
         "https://image.tmdb.org/t/p/w500" + data.results[i].poster_path;
 
       string +=
-        "<div style='border:1px solid black;padding:20px;width:80%;margin:auto;margin-top: 30px;height: 100%;height:300px;'>" +
+        "<div style='border:1px solid black;padding:20px;width:80%;margin:auto;margin-top: 30px;height:360px'>" +
         "<img src=" +
         imgsrc +
-        " style='margin-right:20px;width:200px;height:280px;'><br>" +
+        " style='margin-right:20px;width:220px;height:300px;'><br>" +
         "<h2>" +
         data.results[i].original_title +
         "</h2><br>" +
@@ -51,7 +51,7 @@ async function getUser() {
         "<p>" +
         data.results[i].overview +
         "</p><br>" +
-        "<span>Views: " +
+        "<span>Popularity: " +
         data.results[i].popularity +
         "</span><br>" +
         "<span>Rating: " +
