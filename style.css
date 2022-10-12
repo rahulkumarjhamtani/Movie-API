@@ -4,11 +4,18 @@
   margin-top: 3rem;
 }
 
-input, button
+input
 {
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 7px 12px;
+    width:20%;
+    transition:width 0.3s;
+}
+
+input:hover
+{
+  width:23%;
 }
 
 input
@@ -19,6 +26,20 @@ input
 button
 {
     cursor:pointer;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7px 12px;
+    width:10%;
+    background-color: rgb(1, 1, 41);
+    color:rgb(195, 204, 255);
+    transition:background-color 0.2s;
+    border:none;
+}
+
+button:hover
+{
+  background-color: rgb(12, 21, 104);
+  border:none;
 }
 
 #showList {
@@ -39,3 +60,4 @@ img:hover {
 h2 {
   margin-top: 0;
 }
+
