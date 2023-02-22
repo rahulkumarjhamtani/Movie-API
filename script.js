@@ -13,8 +13,7 @@ var baseURL = "https://api.themoviedb.org/3/search/movie";
 // }
 
 async function findMovie() {
-  // Making an API call (request)
-  // and getting the response back
+  // Making an API call (request) and getting the response back
 
   var movie = document.getElementById("movie").value;
 
